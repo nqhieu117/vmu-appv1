@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#3399FF">
+
+    <ImageView
+        android:background="@drawable/logovmu"
+        android:layout_marginLeft="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:text="Bảng điểm"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="200dp"/>
+
+
+</androidx.appcompat.widget.Toolbar>
