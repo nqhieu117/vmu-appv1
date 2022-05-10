@@ -3,6 +3,7 @@ package hieu.vimaru.vmuapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,8 @@ public class HomePageActivity extends AppCompatActivity {
         dangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MainActivity.editor= MainActivity.sharedPreferences.edit();
+                MainActivity.editor.putString("jwt", null).commit();
                 Intent intent = new Intent(HomePageActivity.this, MainActivity.class);
                 startActivity(intent);
             }
